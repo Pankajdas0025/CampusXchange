@@ -113,13 +113,45 @@ Live deployment on AWS with active domain campusxchange.in. Key modules like log
 •	Regular backups and analytics integration
 •	Support ticket system added for premium queries
       
-15.  H/W and S/W Component Cost
-Component	Description	Cost (INR)	
-Hosting Server	AWS/GCP Cloud (12 months)	11,000	
-Domain Registration	campusxchange.in	1,000	
-SSL Certificate	For secure data transfer	1,500	
-Logo design 	Domain logo	1000	
-Cloud DB Storage	MongoDB Atlas (Free Tier)	0	
-Misc. Tools/Resources	Design, Testing, Docs	200	
-Total Estimated		14,700	
+15. <h1> H/W and S/W Component Cost</h1>
+<table border="1">
+<tr>
+<th>Component</th>
+<th>Description</th>
+<th>Cost (INR)</th>
+</tr>
+<tr>
+<td>Hosting Server</td>
+<td>AWS/GCP Cloud (12 months)</td>
+<td>	11,000	</td>
+</tr>
+<tr>
+<td>Domain Registration</td>
+<td>campusxchange.in</td>
+<td>1,000</td>
+
+</tr>
+<tr>
+<td>SSL Certificate</td>
+<td>For secure data transfer</td>
+<td>1,500</td>
+</tr>
+
+<tr>
+<td>Logo design </td>
+<td>Domain logo</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Total Estimated	</td>
+<td></td>
+<td>14,700</td>
+</tr>
+</table>
+		
+	
+	
+	
+
+
 
