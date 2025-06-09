@@ -1,0 +1,604 @@
+
+:root {
+  --primary-color: #6366f1; /* Indigo */
+  --secondary-color: #f43f5e; /* Rose */
+  --bg-light: #f9fafb;
+  --text-color: #1f2937;
+  --card-bg: #f3eded;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  --radius: 12px;
+  --font-main: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  padding: 20px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header{
+  background: var(--primary-color);
+  color: white;
+  padding: 20px 40px;
+  border-radius: var(--radius);
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* use in future ................ */
+/* main
+{
+  background-color: red;
+  opacity: 1;
+} */
+
+.navbar
+{
+  background-color:transparent;
+  width: 100%;
+  height:auto;
+}.navbar-nav
+{
+  list-style: none;
+}
+
+.navbar a{
+  float: left;
+  padding-left:60px;
+  color: white;
+  font-size:18px;
+  outline: none;
+  border: none;
+}
+/* //for mobile */
+.navbar-toggler
+{
+  background-color:transparent;
+  display: none;
+  height:60px;
+  width:60px;
+  float: right;
+}
+
+.website_name {
+ font-weight: bold;
+ padding-top:10px;
+ font-size: 31px;
+ text-decoration: none;
+}.website_name:hover
+{
+  text-decoration: none;
+}.Mobile_name
+{
+  display: none;
+}
+
+.hero {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 50px;
+  border-radius: var(--radius);
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  height:550px;
+  align-items: center;
+  align-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+
+
+#NotesContent
+{
+  height: 530px auto;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+input[type="text"] {
+  padding: 12px;
+  width: 260px;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  border-color: var(--primary-color);
+}button[type="submit"]
+{
+  height:52px;
+}
+
+button[type="submit"]:hover, .btn-primary:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+  
+}
+
+.Note_box {
+  background-color: var(--card-bg);
+  padding: 5px;
+  border-radius: var(--radius);
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+
+.Note_box:hover {
+  transform: scale(1.01);
+}
+
+#Note_tittle {
+  font-size: 2.5rem;
+  color:black;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#span {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size:2.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#span:hover {
+  color: var(--secondary-color);
+}
+
+#Note_content {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  font-size:1.5rem;
+  font-family: var(--font-main);
+  background-color: #e0e2e8;
+  border: none;
+  border-radius: var(--radius);
+  margin-top:5px;
+  resize: none;
+  color: #000103;
+}
+
+.Note_footer {
+  display: flex;
+  justify-content:space-between;
+  margin-top: 15px;
+  font-size:2rem;
+
+  
+}.Note_footer a
+{
+  color: white;
+  height: 40px;
+  width: 150px;
+  padding:4px;
+  padding-left:10px;
+
+  border-radius: var(--radius);
+  text-decoration: none;
+  background-color:var(--primary-color) ;
+}
+
+
+/* Assignment section--------------------------------------------------------------------------------------------------------------------  */
+#Assignment
+{
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 50px;
+  border-radius: var(--radius);
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  height:700px;
+  align-items: center;
+  align-content: center;
+  transition-delay: 10s;
+ 
+}
+/* Assignment box buttons  */
+    
+#Assignment a
+{
+  outline: none;
+  border: none;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  border:2px solid  white;
+  border-radius: var(--radius);
+  color: rgb(255, 255, 255);
+  height:40px;
+  width:100px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color s ease, transform 0.8s ease;
+}
+#Assignment a:hover {
+  background-color: #8ff48f;
+  transform:scale(1.2);
+  text-decoration: overline;
+ 
+  
+}
+/* Portfolio section--------------------------------------------------------------------------------------------------------------------  */
+#Portfolios{
+   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 50px;
+  border-radius: var(--radius);
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  height:700px auto;
+ 
+
+} 
+#Portfolios a
+{
+  outline: none;
+  border: none;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  border:2px solid  rgb(246, 22, 22);
+  border-radius: var(--radius);
+  color: rgb(255, 255, 255);
+  height:40px;
+  width:100px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color s ease, transform 0.8s ease;
+}
+/* ------------------------------portfolio slider  -------------------------------------------------------------------------*/
+.slider-box {
+      width: 400px;
+      height: 250px;
+      overflow: hidden;
+      margin: 1% auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      touch-action: pan-y;
+    }
+
+    .slider-images {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+      height: 100%;
+    }
+
+    .slider-images img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .numbers {
+      margin-top: 12px;
+    }
+
+    .num-btn {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 6px 10px;
+      background: #ddd;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .num-btn.active {
+      background-color: #333;
+      color: white;
+    }
+
+
+    /* fortfolio contact form ---------------------------------------------------------------------------------------------- */
+    #Portfolios input{
+  padding: 12px;
+  width: 260px;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 1rem;
+  margin-left: 20px;
+  color: black;
+}
+
+#Portfolios input:focus {
+  border-color: var(--primary-color);
+  border: 4px double var(--primary-color);
+}
+footer{
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 60px;
+  height:100px;
+  width: 100%;
+  background-color:var(--primary-color);;
+}
+
+footer a {
+  color:white;
+  text-decoration: none;
+  font-size:18px;
+}
+
+footer a:hover 
+{
+  text-decoration: underline;
+  color: #f3f4f6;
+}footer p
+{
+  font-size: 18px;
+  color: #f3f4f6;
+}
+
+
+
+@media screen and (max-width:767px)
+{
+.navbar-toggler
+{
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  margin-top: 6px;
+  height:30px;
+  width:30px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  right: 0;
+}
+header{
+  background: var(--primary-color);
+  color: white;
+  padding: 20px 40px;
+  border-radius: var(--radius);
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+ 
+}
+.navbar
+{
+  width: 90%;
+  height:auto;
+  padding: 55px 35px;
+  overflow: hidden;
+  float: left;
+  border: none;
+   
+}.navbar-nav
+{
+  list-style: none;
+  overflow: hidden;
+  float: left;
+
+  outline: none;
+}
+
+.navbar a{
+  float: left;
+  padding-left:50px;
+  color: rgb(255, 255, 255);
+  font-size:18px;
+  outline: none;
+  border: none;
+}
+.website_name {
+ display: none;
+
+}.Mobile_name
+{
+  font-weight: bold;
+  font-size:1.3rem;
+  display: block;
+  font-family: var(--font-main);
+}.hero h1 {
+  font-size:2.3rem;
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.hero h4 {
+  font-size: 1.3rem;
+  margin-top:35px;
+  opacity:0.9;
+  padding: 25px 5px;
+  font-family:var(--font-main);
+  justify-content: center;
+}
+#Note_tittle {
+  font-size: 2.4rem;
+}
+
+#span {
+
+  margin-right: 20px;
+ 
+}
+
+
+#Note_content {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  font-size:1.2rem;
+  font-family: var(--font-main);
+  background-color: #e0e2e8;
+  border: none;
+  border-radius: var(--radius);
+  margin-top:5px;
+  resize: none;
+  color: #000103;
+}
+button[type="submit"]
+{
+  height:52px;
+  margin-top: 20px;
+}
+.Note_footer {
+
+  margin-top: 15px;
+  font-size:1.2rem;
+  justify-content:space-between;
+}.Note_footer a
+{
+  color: white;
+  height: 30px;
+  width: 80px;
+  padding:5px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  background-color:var(--primary-color) ;
+}
+
+/* Assignment section--------------------------------------------------------------------------------------------------------------------  */
+#Assignment
+{
+ 
+  padding: 30px;
+  padding-bottom: 0;
+  justify-content: center;
+  border-radius: var(--radius);
+  margin-bottom: 40px;
+  word-wrap: inherit;
+  text-align: center;
+  box-shadow: var(--shadow);
+  height:720px;
+  align-items: center;
+  align-content: center;
+  transition-delay: 10s;
+}
+/* Assignment box buttons  */
+    
+#Assignment a
+{
+  display: flex;
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  border:2px solid  white;
+  border-radius: var(--radius);
+  color: rgb(255, 255, 255);
+  height:40px;
+  width:180px;
+  font-size: 1.5rem;
+  margin-left:10%;
+  margin-top: 5%;
+  cursor: pointer;
+  transition: background-color s ease, transform 0.8s ease;
+}
+#Assignment a:hover {
+  background-color: #8ff48f;
+  transform:scale(1.0);
+  text-decoration: overline;
+ 
+  
+}#Portfolios h1{
+  font-size: 1.rem;
+ 
+
+}#Portfolios p{
+  font-size:0.9rem;
+ 
+}
+
+/* ------------------------------portfolio slider  -------------------------------------------------------------------------*/
+.slider-box {
+      width: 220px;
+      height: 200px;
+      overflow: hidden;
+      margin: 1% -50px;
+     display: inline-block;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      touch-action: pan-y;
+    }
+   
+.numbers {
+      margin-top: 12px;
+    }
+
+    .num-btn {
+  
+      padding: 2px 2px;
+      background: #ddd;
+    
+    }
+
+  
+footer a {
+  color:white;
+  text-decoration: none;
+  font-size:10px;
+}
+
+#Portfolios input{
+  padding: 12px;
+  width: 180px;
+  height: 30px;
+  margin-top: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.3s;
+  font-size: 0.7rem;
+  margin-left: 0;
+}
+
+#Portfolios input[type="submit"]{
+ font-size: 0.5rem;
+}
+footer a:hover 
+{
+  text-decoration: underline;
+  color: #f3f4f6;
+}footer p
+{
+  font-size:13px;
+  color: #f3f4f6;
+
+  
+}
+}
