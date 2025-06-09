@@ -1,37 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CampusXchange</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CampusXchange/Home</title>
+
+ <!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+
+
+  <!-- cdn JQUARY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!--style cdn -->
+  <!-- cdn bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  
+<!-- cdn fontstyle  -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+<!-- cdn animation  -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   <!-- CSs link -->
+  <link rel="stylesheet" href="../Style.css" type="text/css">
+  
+
 </head>
-<body>
-  <!-- Sticky Header -->
-  <header class="header">
-    <div class="logo">CAMPUSXCHANGE</div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Portfolios</a>
-      <a href="#">Notes</a>
-      <a href="#">Books</a>
-      <a href="#">Assignment</a>
-      <a href="#">About</a>
-    </nav>
-    <div class="user-access">
-      <button id="loginBtn">Login</button>
-    </div>
+<body >
+  <header>
+  <nav class="navbar navbar-expand-lg">
+    <!-- webname  ＣａｍｐｕｓＸｃｈａｎｇｅ -->
+  <div class="Mobile_name">ＣａｍｐｕｓＸｃｈａｎｇｅ</div>
+  <a class="website_name "><p>CampusXchange</p></a>
+
+  <!-- toggle icon -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="glyphicon glyphicon-menu-hamburger"></span>
+  </button>
+  <!-- nav links  -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#NotesContent">Notes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Assignment">Assignment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#Portfolios">Portfolios</a>
+      </li>
+      
+       <li class="nav-item">
+        <a class="nav-link disabled" href="#">BookExchange</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link disabled" href="#">About us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>A colloborative space 📚</h1>
-    <p>For Portfolio designing, Note Sharing, Notes accessing ,assignment help, and Book Exchange.</p>
-    <div class="cta-buttons">
-      <button>Explore Resources</button>
-      <button>About More</button>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+    
+      <h1>██▓▒­░𝙰 𝙲𝚘𝚕𝚕𝚊𝚋𝚘𝚛𝚊𝚝𝚒𝚟𝚎 𝚜𝚙𝚊𝚌𝚎 ░▒▓██</h1>
+      <h4>𝙵𝚘𝚛 𝙽𝚘𝚝𝚎 𝚂𝚑𝚊𝚛𝚒𝚗𝚐, 𝙽𝚘𝚝𝚎𝚜 𝚊𝚌𝚌𝚎𝚜𝚜𝚒𝚗𝚐 , 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚌𝚛𝚎𝚊𝚝𝚒𝚗𝚐 , 𝙰𝚜𝚜𝚒𝚐𝚗𝚖𝚎𝚗𝚝 𝚑𝚎𝚕𝚙, 𝚊𝚗𝚍 𝙱𝚘𝚘𝚔 𝙴𝚡𝚌𝚑𝚊𝚗𝚐𝚎</h4> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+    </section>
+    <!------Notes section -------------------------------------------------------------->
+    <section class="Notes content" id="NotesContent">
+     
+      <h2>Notes</h2><p>* Only for BCA students</p>
+    <form method="GET">
+    <input type="text" name="search" placeholder="Enter subject name.1" style="font-size:16px; font-family:'Poppins', sans-serif;">
+    <button type="submit" class="btn btn-info btn-lg">
+    <span class="glyphicon glyphicon-search"></span>Search</button>
+    </form>
+    <br>
+    <div class='Note_box'>
+        <h2 id='Note_tittle'>Datascience<button id='span'  onclick="copyLink('https://drive.google.com/file/d/1v3VyhLIe01gfFxlqyonpkDtT_DXlDZjz/view?usp=sharing')"><span class='glyphicon glyphicon-share-alt'></span></button> </h2><br>
+        <textarea id='Note_content' readonly>CampusXchange addresses key academic and professional development needs of students. It integrates portfolio creation, book exchange, notes sharing, and assignment assistance into a single platform. The project encourages collaboration and offers cost-effective alternatives to traditional academic services. In future, features like AI-based book suggestions, mobile app, content rating, and LMS integration will be added to scale the solution.</textarea>
+<div class='Note_footer'><a  href="https://drive.google.com/file/d/1v3VyhLIe01gfFxlqyonpkDtT_DXlDZjz/view?usp=sharing">Read </a> <a href="https://drive.google.com/file/d/1v3VyhLIe01gfFxlqyonpkDtT_DXlDZjz/view?usp=sharing" download="">Download</a></div>
+      </div>
+         <div class='Note_box'>
+        <h2 id='Note_tittle'>Machine Learning<button id='span'  onclick="copyLink('https://drive.google.com/file/d/1v3VyhLIe01gfFxlqyonpkDtT_DXlDZjz/view?usp=sharing')"><span class='glyphicon glyphicon-share-alt'></span></button> </h2><br>
+        <textarea id='Note_content' readonly>CampusXchange addresses key academic and professional development needs of students. It integrates portfolio creation, book exchange, notes sharing, and assignment assistance into a single platform. The project encourages collaboration and offers cost-effective alternatives to traditional academic services. In future, features like AI-based book suggestions, mobile app, content rating, and LMS integration will be added to scale the solution.</textarea>
+<div class='Note_footer'><a  href="https://drive.google.com/file/d/1v3VyhLIe01gfFxlqyonpkDtT_DXlDZjz/view?usp=sharing">Read </a><a href="https://drive.google.com/file/d/1v3VyhLIe01gfFxlqyonpkDtT_DXlDZjz/view?usp=sharing" download="">Download</a></div>
+      </div>
+       <br>
+       <br>
+
+      <!-- Backend work for accessing notes ................................... -->
+   
+    </section>
+   
+       <section  id="Assignment">
+    
+      <h1>For Lab Assignment Help ?</h1>
+      <p>for Portfolios, Note Sharing, Notes accessing ,assignment help, and Book Exchange to create a blog, Please login and use the admin panel to publish from your space</P> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+     <br>
+     <br>
+     <br>
+         <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20MS%20Office%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>MS Office</a>
+                  <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20C%20Programming%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>C Programing</a>
+                           <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20WEB%20Technology%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>WebTechnology</a>
+                                    <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DSA%20Using%20C++%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>DSA using C++</a>
+                                             <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DBMS%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>DBMS</a>
+                                                   <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20PHP%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>PHP</a>
+    </section>
+      <section  id="Portfolios">
+    
+      <h1>Are you intrested to make Portfolio?</h1>
+      <p>Select your template and fill the form given below . our team contact you within 24 Hr. </P> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+     <br>
+     
+<div class="slider-box" id="sliderBox">
+  <div class="slider-images" id="slider">
+    <img src="Images/P1.png" alt="Image 1">
+    <img src="Images/P2.png" alt="Image 2">
+    <img src="Images/P3.png" alt="Image 3">
+    <img src="Images/P4.png" alt="Image 3">
+    <img src="Images/P5.png" alt="Image 3">
+  </div>
+</div>
+
+<div class="numbers" id="numberContainer">*This indicate sample number: </div>
+<br>
+<br>
+<form method="GET">
+    <input type="text" name="search" placeholder="Enter your name" style="font-size:16px; font-family:'Poppins', sans-serif;">
+     <input type="email" name="search" placeholder="Email" style="font-size:16px; font-family:'Poppins', sans-serif;">
+      <input type="tel" name="search" placeholder="Mobile" style="font-size:16px; font-family:'Poppins', sans-serif;">
+       <input type="number" name="search" placeholder="selected sample..." style="font-size:16px; font-family:'Poppins', sans-serif;">
+    <button type="submit" class="btn btn-info btn-lg" onsubmit="Formvalid()">Submit</button>
+    </form>
+ 
+       
+    </section>
+  </main>
+
+
+  <footer>
+    <p><a href="../PDF/Privacy Policy for CampusXchang1.pdf">Privacy & Policy | </a> <a href="../PDF/Terms of Service for CampusXchange.pdf">Terms & Services</a><a href="https://wa.me/919155726625?text=Hey%2C%20can%20you%20Please%20share%20the%20details%20about%20𝗕𝗹𝗼𝗴𝗦𝗰𝗿𝗶𝗽𝘁"> | Contact us</a>
+    <p>CampusXchange &copy;2025  All rights reserved.</p>
+  </footer>
+  <script src="../script.js"></script>
 </body>
 </html>

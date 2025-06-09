@@ -298,7 +298,7 @@ button[type="submit"]:hover, .btn-primary:hover {
     .slider-images img {
       width: 400px;
       height: 250px;
-      object-fit: cover;
+      /* object-fit: cover; */
       flex-shrink: 0;
     }
 
