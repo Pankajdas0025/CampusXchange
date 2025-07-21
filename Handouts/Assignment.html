@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../Style.css" type="text/css">
+ <!--favicon ------------------------------------------------------------------------------>
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+<link rel="manifest" href="../favicon_io/site.webmanifest">
+
+</head>
+<body>
+  <!-- animated cursor ------------------->
+ <div class="cursor">
+  
+ </div>
+ <script>
+  const cursor=document.querySelector(".cursor");
+  document.addEventListener("mousemove",(e)=>
+{
+  let x=e.pageX;
+  let y=e.pageY;
+  cursor.style.top = y+"px";
+  cursor.style.left = x+"px";
+});
+ </script>
+<!-- animated cursor end ---------------->
+   <!--Assignment page Header and navbar ----------------------------------------------------------------------------------------->
+     <header>
+  <div class="Logo"><img src="../Images/L.svg" title="CampusXchange Logo"></div>
+  </header>
+<div class="topnav" id="myTopnav">
+  <a href="../Index.html" class="active">Home</a>
+   <div class="dropdown">
+    <button class="dropbtn">Handouts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Notes.html" >Notes</a>
+      <a href="Blog.html">Blogs</a>
+      <a href="Assignment.html" style="background-color: #555;">Programming Assignment</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="../Services/Webdevelopment.html">Website Development</a>
+      <a href="../Services/SEO.html">SEO</a>
+    </div>
+  </div> 
+  <a href="../Internship.html">Mentorship & Internship</a>
+  <a href="../About.html">About</a>
+  <a href="../Lettalk.html">Let's Talk</a>
+    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
+ <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+</div>
+<br>
+ <!-- Assignment section  ------------------------------------------------------------------------------------------------>
+   
+       <section  id="Assignment">
+      <h1>For Programing Lab Assignment Help ?</h1>
+      <p>Click on following buttons and connect with our team .. Our team give all Assignment which you want ??</P> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+     <br>
+     <br>
+
+                  <a href="https://wa.me/8252399138?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20C%20Programming%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>C Programing</a>
+                           <a href="https://wa.me/6201962856?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20WEB%20Technology%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>WebTechnology</a>
+                                    <a href="https://wa.me/8340179575?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DSA%20Using%20C++%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>DSA using C++</a>
+                                             <a href="https://wa.me/9341218494?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DBMS%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>DBMS</a>
+                                                   <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20PHP%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>PHP</a>
+    </section>
+     <!-- Assignment section end  ------------------------------------------------------------------------------------------------>
+       <!-- fotter section  --------------------------------------------------------------------------------->
+        <section class="Footer">
+ <div class="fbox" id="lastfooter"><br><h2>CampusXchange
+ </h2>
+<h3>Our Mission:</h3>
+<p>Our mission is to empower students with the knowledge and skills necessary to succeed in their academic and professional endeavors. At Paramount Coaching, we believe in fostering a strong learning environment that promotes holistic development</p>
+   <br>
+    <hr>
+</div>
+<br>
+     <div  id="quicklinks"><h2>Quick links</h2>
+        <a href="../Index.html">Home</a>      
+        <a href="Notes.html">Notes</a>
+        <a href="Blog.html">Blogs</a>
+        <a href="Assignment.html">Programming Assignment</a>
+        <a href="../Services/Webdevelopment.html">Website Development</a>
+        <a href="../Services/SEO.html">SEO</a>
+        <a href="../Internship.html">Mentorship & Internship</a>
+        <a href="../About.html">About</a>
+        <a href="../Lettalk.html">Let's Talk</a>
+        
+      </div>
+ 
+        </section>  
+        <!-- fotter section end  --------------------------------------------------------------------------------->  
+<script src="../script.js"></script>
+</body>
+</html>

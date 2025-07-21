@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- cdn bootstrap  style -->
+ 
+ <link rel="stylesheet" href="../Style.css" type="text/css">
+</head>
+<body>
+   <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+   <div class="dropdown">
+    <button class="dropbtn">Resources
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Notes</a>
+      <a href="#">Blogs</a>
+      <a href="#">Programming Assignment</a>
+    </div>
+  </div> 
+   <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Website Development</a>
+      <a href="#">SEO</a>
+    </div>
+  </div> 
+  <a href="#contact">Training & Internship</a>
+ 
+  <a href="#about">About</a>
+    <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
+ <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+</div>
+<br>
+
+    <!-- hero section tittle of the project  ------------------------------------------------------------------------>
+<section class="hero">
+    
+      <h1>██▓▒­░𝙰 𝙲𝚘𝚕𝚕𝚊𝚋𝚘𝚛𝚊𝚝𝚒𝚟𝚎 𝚜𝚙𝚊𝚌𝚎 ░▒▓██</h1>
+      <h4>𝙵𝚘𝚛 𝙽𝚘𝚝𝚎 𝚂𝚑𝚊𝚛𝚒𝚗𝚐, 𝙽𝚘𝚝𝚎𝚜 𝚊𝚌𝚌𝚎𝚜𝚜𝚒𝚗𝚐 , 𝙿𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚌𝚛𝚎𝚊𝚝𝚒𝚗𝚐 , 𝙰𝚜𝚜𝚒𝚐𝚗𝚖𝚎𝚗𝚝 𝚑𝚎𝚕𝚙, 𝚊𝚗𝚍 𝙱𝚘𝚘𝚔 𝙴𝚡𝚌𝚑𝚊𝚗𝚐𝚎</h4> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+</section>
+
+
+
+    <!------search Notes section -------------------------------------------------------------->
+    <section class="Notes content" id="NotesContent">
+      <h2>Notes</h2><p>* Technical Study Notes</p>
+    <form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+    <input type="text" name="search" placeholder="Enter subject name...." style="font-size:16px; font-family:'Poppins', sans-serif;">
+    <button type="submit" class="btn btn-info btn-lg">
+    <span class="glyphicon glyphicon-search"></span>Search</button>
+    </form>
+
+       <br>
+       <br>
+    <!------Notes section -------------------------------------------------------------->
+    <div class='Note_box'>
+        <h2 id='Note_tittle'>Datascience<button id='span'  onclick=\"copyLink('{$row['noteLink']}')\"><span class='glyphicon glyphicon-share-alt'></span></button> </h2><br>
+        <textarea id='Note_content' readonly>This is a technical subjkect where we learn about ch the the data science </textarea>
+<div class='Note_footer'><a  href='{$row['noteLink']}'>Read <a  href=' $downloadLink ' download >Download</a></div>
+      </div>
+    </section>
+    <!-- Assignment section  ------------------------------------------------------------------------------------------------>
+   
+       <section  id="Assignment">
+      <h1>For Programing Lab Assignment Help ?</h1>
+      <p>Click on following buttons and connect with our team .. Our team give all Assignment which you want ??</P> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+     <br>
+     <br>
+
+                  <a href="https://wa.me/8252399138?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20C%20Programming%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>C Programing</a>
+                           <a href="https://wa.me/6201962856?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20WEB%20Technology%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>WebTechnology</a>
+                                    <a href="https://wa.me/8340179575?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DSA%20Using%20C++%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>DSA using C++</a>
+                                             <a href="https://wa.me/9341218494?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20DBMS%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>DBMS</a>
+                                                   <a href="https://wa.me/919155726625?text=Hey%20CampusXchange%20Team%20can%20you%20Please%20share%20the%20PHP%20Assignment" target="blank"><span class="glyphicon glyphicon-triangle-right"></span>PHP</a>
+    </section>
+     <!-- Assignment section end  ------------------------------------------------------------------------------------------------>
+
+
+      <!-- Service section  ------------------------------------------------------------------------------------------------>
+      <section  id="Portfolios">
+    
+      <h1>Are you intrested to make Your Website?</h1>
+      <p>Select your template and fill the form given below . our team contact you within 24 Hr. </P> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+     <br>
+     
+<div class="slider-box" id="sliderBox">
+  <div class="slider-images" id="slider">
+    <img src="Images/P1.png" alt="Image 1">
+    <img src="Images/P2.png" alt="Image 2">
+    <img src="Images/P3.png" alt="Image 3">
+    <img src="Images/P4.png" alt="Image 3">
+    <img src="Images/P5.png" alt="Image 3">
+  </div>
+</div>
+
+<div class="numbers" id="numberContainer"> </div>
+<br>
+</section>
+
+
+<script src="../script.js"></script>
+
+</body>
+</html>
