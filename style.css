@@ -7,19 +7,23 @@
   /* --primary-color: #7DA56C; 
   --secondary-color: #e9b003;  */
   --bg-light: #f9fafb;
-  --text-color: #1f2937;
+  --Lighttext-color: #000000;
+  --darktext-color:white;
   --card-bg: #f3eded;
   --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   --radius: 12px;
   --font-main: 'Poppins', sans-serif;
   --hoverbg :#555;
   --pSize:0.9rem;
+  --border:2px dotted white;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
-}.marquee {
+  padding: 0;
+}
+/* .marquee {
   overflow: hidden;
   background: #f5f5f5;
   border-top: 2px solid #0073e6;
@@ -35,11 +39,10 @@
   margin: 0 2rem;
   font-size: 1rem;
   white-space: nowrap;
-  color: #000000;
+  color:;
   font-weight: 500;
 }
 
-/* pause on hover */
 .marquee__inner:hover {
   animation-play-state: paused;
 }
@@ -47,13 +50,13 @@
 @keyframes scroll-left {
   0%   { transform: translate(0); }
   100% { transform: translate(-100%); }
-}
+} */
 
 
 body {
   font-family: var(--font-main);
   background-color: var(--bg-light);
-  color: var(--text-color);
+  color: var();
   padding:10px 80px;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -84,7 +87,7 @@ body {
 
 }
 /* body scroll animation end-------------------------------------------------- */
-/* Animated cursor  ---------------------------------*/
+/* Animated cursor for all pages ---------------------------------*/
 .cursor
 {
   z-index: 999;
@@ -117,6 +120,9 @@ header
   width: 30%;
   background-color:transparent;
   padding: 0;
+  font-size:20px;
+  font-style: normal;
+  color: white;
 }.Logo img
 {
   height:100px;
@@ -154,6 +160,7 @@ header
 .dropdown {
   float: left;
   overflow: hidden;
+  padding-top:4px;
   padding-top:0px;
  
   
@@ -164,7 +171,7 @@ header
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 18px 16px;
   background-color: inherit;
   font-family: inherit;
   border: none;
@@ -203,7 +210,7 @@ header
   display: block;
 }
 
-/* navbar code end ------------------------------------------------------------------------------------------------------------------- */
+/* navbar code end  here ------------------------------------------------------------------------------------------------------------------- */
 
 /* Homepage Hero section ------------------------------------------------------------------------------------------------------------- */
 .hero {
@@ -213,21 +220,109 @@ header
   margin-bottom: 40px;
   text-align: center;
   box-shadow: var(--shadow);
-  height:600px;
+  height:auto;
   align-items: center;
   align-content: center;
   padding: 3rem 2rem;
-}.HeroImg img
+ 
+  
+
+}.HeroImg
+{
+  background-color:transparent;
+  backdrop-filter: blur(10px);
+   border-radius: 50%;
+   height: 400px;
+   width: 400px;
+   margin: auto;
+   box-shadow: 1px 2px 50px white;
+   border-right: 6px solid black;
+ 
+  
+  
+}
+#Main
 {
   height:300px;
   width:300px;
+  margin:50px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 50px rgb(20, 17, 17);
 
+}
+.HerosubImg1 , .HerosubImg2, .HerosubImg3 ,.HerosubImg4
+{
+height:50px;
+width: 150px;
+border-radius:20px 20px 0 20px;
+position: absolute;
+align-items: center;
+align-content: center;
+box-shadow: 1px 2px 50px black;
+border:var(--border);
+
+}
+.HerosubImg1
+{
+
+background-color:#f43f5e;
+margin:0 0 0 -20%;
+animation: HerosubImgRotate1 linear 10s infinite;
+
+}
+.HerosubImg2
+{
+
+background-color:#6366f1;
+margin:0 0 0 80%;
+animation: HerosubImgRotate2 linear 10s infinite;
+}
+.HerosubImg3
+{
+
+background-color:#f43f5e;
+margin:90% 0 80% 80%;
+animation: HerosubImgRotate3 linear 10s infinite;
+}
+.HerosubImg4
+{
+
+background-color:#6366f1;
+margin:90% 0 0 -20%;
+animation: HerosubImgRotate4 linear 10s infinite;
+}
+
+@keyframes HerosubImgRotate1 {
+  0%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
+  25%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
+  50%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
+  100%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
+  
+}@keyframes HerosubImgRotate2 {
+  
+  0%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
+  25%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
+  50%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
+  100%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
+  
+}@keyframes HerosubImgRotate3 {
+  0%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
+  25%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
+  50%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
+  100%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
+  
+}@keyframes HerosubImgRotate4 {
+  0%{margin:90% 0 0 -20%;border-radius:20px 0 20px 20px;}
+  25%{margin:0 0 0 -20%;border-radius:20px 20px 0 20px;}
+  50%{margin:0 0 0 80%;border-radius:20px 20px 20px 0;}
+  100%{margin:90% 0 80% 80%;border-radius:0 20px 20px 20px;}
+  
 }
 
 .hero h1 {
   font-size: 1.8rem;
   text-align: left;
-  text-shadow: 4px 4px 10px black;
+  text-shadow: 4px 4px 20px black;
   
 
 }
@@ -267,7 +362,7 @@ header
   border: none;
   padding: 12px 24px;
   background-color: var(--primary-color);
-  border:2px solid  white;
+  border:var(--border);
   text-decoration: none;
   border-radius: var(--radius);
   color: rgb(255, 255, 255);
@@ -294,7 +389,7 @@ header
   margin-bottom: 40px;
   text-align: center;
   box-shadow: var(--shadow);
-  height:700px auto;
+  height:700px;
  
 
 } #Service-demo h2
@@ -308,7 +403,7 @@ header
   outline: none;
   border: none;
   background-color: var(--primary-color);
-  border:1px solid  white;
+ border:var(--border);
   border-radius: var(--radius);
   color: rgb(255, 255, 255);
   height:40px;
@@ -369,6 +464,83 @@ header
 
 /* Service-demo section end -------------------------------------------------------------------------------------------------------- */
 
+/* -- SEO service CTA section  ------------------------------------------------------------------------------------------------ */
+
+.seoSection h2
+{
+  text-align:left;
+  
+}
+.seoSection{
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: var(--radius);
+  margin-bottom:20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  height:700px;
+ 
+
+}
+.typeSeo
+{
+  height: 50px;
+  width:20vw;
+  transform:rotate(270deg);
+  margin:150px 0;
+  display:inline-block;
+   align-items: center;
+  align-content: center;
+   clip-path: polygon(0% 0%, 50% 0% , 100% 50% , 50% 100% , 0% 100%);
+   border: var(--border);
+   text-align: left;
+   padding-left:20px;
+   transition: 2s;
+  
+  
+}#seo1
+{
+  background-color: #f43f5e;
+  animation: SeoAnn1  2s infinite;
+}
+#seo2
+{
+    background-color: #6366f1;
+    animation: SeoAnn2  2s infinite;
+}
+#seo3
+{
+    background-color: #f43f5e;
+    animation: SeoAnn3  2s infinite;
+}
+
+@keyframes SeoAnn1
+{
+  0%{translate: 0 -20px;}
+  25%{translate: 0 -40px;}
+  50%{translate: 0 -60px;}
+  100%{translate: 0 0;}
+}
+@keyframes SeoAnn2
+{
+  
+  0%{translate: 0 -40px;}
+  25%{translate: 0 -60px;}
+  50%{translate: 0 0;}
+  100%{translate: 0 -20px;}
+}
+
+@keyframes SeoAnn3
+{
+  0%{translate: 0 -60px;}
+  25%{translate: 0 0;}
+   50%{translate: 0 -20px;}
+  100%{translate: 0 -40px;}
+}
+
+
+/* -- SEO service CTA section end here ------------------------------------------------------------------------------------------------ */
 
 
 /* Performance and brif intro  section  -------------------------------------------------------------------------------------------------------- */
@@ -420,13 +592,13 @@ header
 /* Performance and brif intro  section end -------------------------------------------------------------------------------------------------------- */
 
 }#Internship{
-    color: white;
-    background-image: url(Images/Hero.jpg);
+    color: rgb(0, 0, 0);
+    /* background-image: url(Images/Hero.jpg); */
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height:auto;
     border-radius: var(--radius);
-    /* background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); */
+   background-color:transparent;
    
 }#Internship:hover button
 {
@@ -458,8 +630,7 @@ header
 .IHero
 {
   padding: 3rem 2rem;
-  background-color:transparent;
-  backdrop-filter: blur(30px);
+  background-color:white;
   height:100%;
   border-radius: var(--radius);
  
@@ -468,7 +639,7 @@ header
   outline: none;
   border: none;
   background-color: var(--primary-color);
-  border:1px solid  white;
+  border:var(--border);
   border-radius: var(--radius);
   color: rgb(255, 255, 255);
   height:40px;
@@ -494,7 +665,7 @@ header
   top: 90%;
   right:12.5%;
   border-radius: var(--radius);
-  border: 1px solid var(--secondary-color);
+  border:var(--border);
   display: none;
 }
  #btn2
@@ -509,35 +680,50 @@ header
   font-weight: bolder;
   display: none;
   border-radius: 50%;
-  border: 1px solid white;
+  border:var(--border);
   
 }.Footer
 {
   height:auto;
-  background-color:var(--hoverbg);
+  background-color:rgb(54, 51, 51);
   padding: 1.5rem 2rem;
   color: var(--bg-light);
 }#quicklinks
 {
-  height: 350px;
+  height:50px;
+  margin-top:12px;
+  padding: 1rem 0;
+  
 }
 
- .Footer a
+#quicklinks a
 {
-  height:auto;
-  padding: rem 2rem;
-  padding: 2rem 0.5rem;
   color: var(--bg-light);
   text-decoration: none;
-  /* display: block; */
-} .Footer a:hover
+  display:inline;
+  padding: 2rem 1rem 1rem 0;
+  
+}#quicklinks a:hover
 {
   color: rgb(170, 167, 163);
 }
+#Sociallinks
+{
+  height:100px;
+  padding: 1rem 1rem 1rem 0;
+  margin-top: 12px;
+}#Sociallinks a
+{
+  
+  padding: 0.5rem 1rem 0.5rem 0;
+  font-size: 30px;
+  color: var(--bg-light);
+}#CopyRight
+{
+  height:100px;
 
 
-
-
+}
 
 
 @media screen and (max-width:700px)
@@ -597,6 +783,94 @@ header
 {
   padding: 2rem 1rem;
   height: auto;
+}.HeroImg
+{
+  background-color:transparent;
+  backdrop-filter: blur(10px);
+   border-radius: 50%;
+   height: 200px;
+   width: 200px;
+   margin: auto;
+   box-shadow: 1px 2px 50px white;
+   border-right: 6px solid black;
+ 
+  
+  
+}
+#Main
+{
+  height:150px;
+  width:150px;
+  margin:25px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 50px rgb(20, 17, 17);
+
+}
+
+.HerosubImg1
+{
+position: absolute;
+background-color:#f43f5e;
+margin:0 0 0 -20%;
+height:40px;
+font-size:10px;
+padding:0;
+width: 75px;
+border-radius:20px 20px 0 20px;
+animation: HerosubImgRotate1 linear 10s infinite;
+align-items: center;
+align-content: center;
+box-shadow: 1px 2px 50px black;
+border:var(--border);
+
+}
+.HerosubImg2
+{
+position: absolute;
+background-color:#6366f1;
+margin:0 0 0 80%;
+height:40px;
+font-size:10px;
+padding:0;
+width: 75px;
+border-radius:20px 20px 20px 0;
+animation: HerosubImgRotate2 linear 10s infinite;
+align-items: center;
+align-content: center;
+box-shadow: 1px 2px 50px black;
+border:var(--border);
+}
+.HerosubImg3
+{
+position: absolute;
+background-color:#f43f5e;
+margin:90% 0 80% 80%;
+height:40px;
+font-size:10px;
+padding:0;
+width: 75px;
+border-radius:0 20px 20px 20px;
+animation: HerosubImgRotate3 linear 10s infinite;
+align-items: center;
+align-content: center;
+box-shadow: 1px 2px 50px black;
+border:var(--border);
+}
+.HerosubImg4
+{
+position: absolute;
+background-color:#6366f1;
+margin:90% 0 0 -20%;
+height:40px;
+font-size:10px;
+padding:0;
+width: 75px;
+border-radius:20px 0 20px 20px;
+animation: HerosubImgRotate4 linear 10s infinite;
+align-items: center;
+align-content: center;
+box-shadow: 1px 2px 50px black;
+border:var(--border);
 }
 .hero h1 {
   font-size:1.9rem;
@@ -659,9 +933,22 @@ header
  
   
 }
- 
+ /* -- SEO service CTA section  ------------------------------------------------------------------------------------------------ */
+.typeSeo
+{
+  height: 30px;
+  width:200px;
+  margin-left:-10px;
+  background-color: red;
+  transform:none;
+  display:block;
+  margin-bottom:0;
+  margin-top: 50px;
 
-}#Service-demo p {
+}
+
+/* -- SEO service CTA section end here ------------------------------------------------------------------------------------------------ */
+#Service-demo p {
   font-size:var(--pSize);
  
 }
@@ -688,7 +975,9 @@ header
       padding: 1px 6px;
     border-radius: var(--radius);
     
-    }#Internship
+    }
+    
+    #Internship
     {
       height:auto;
     } 
@@ -742,18 +1031,26 @@ header
   font-weight: bolder;
   display: none;
   
-}.Footer a
+}#quicklinks
+{
+  height: auto;
+}
+#quicklinks a
 {
 
   padding:0.2rem 0.2rem;
   color: var(--bg-light);
   display: block;
 
+}
+#CopyRight
+{
+  height:100px;
+  font-size:0.7rem;
 
 
+}
 }
 
 
 
-
-}

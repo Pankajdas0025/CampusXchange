@@ -143,19 +143,19 @@ function changCount() {
 
 
 // to display popup box ................................................................................................
-setTimeout(function()
-{
-document.querySelector("#btn1").style.display = "block";
-document.querySelector("#btn2").style.display = "block";
-document.querySelector("main").style.opacity = "0.3";
-document.querySelector("main").style.pointerEvents ="none";
+// setTimeout(function()
+// {
+// document.querySelector("#btn1").style.display = "block";
+// document.querySelector("#btn2").style.display = "block";
+// document.querySelector("main").style.opacity = "0.3";
+// document.querySelector("main").style.pointerEvents ="none";
 
 
 
 
-},10000)
+// },10000)
 
-// to remove popup box ................................................................................................
+// to remove cancel popup box ................................................................................................
 function RemoveIpop()
 {
   document.querySelector("#btn1").style.display = "none";
@@ -163,3 +163,15 @@ function RemoveIpop()
   document.querySelector("main").style.opacity = "1";
   document.querySelector("main").style.pointerEvents ="fill";
 }
+
+// animated cursor -----------------------------------------------
+
+  const cursor=document.querySelector(".cursor");
+  document.addEventListener("mousemove",(e)=>
+{
+  let x=e.pageX;
+  let y=e.pageY;
+  cursor.style.top = y+"px";
+  cursor.style.left = x+"px";
+});
+// animated cursor end ----------------------------------------------------

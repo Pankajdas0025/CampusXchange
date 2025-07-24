@@ -84,6 +84,21 @@ box-shadow: 2px 2px 4px black;
  </style>
 </head>
 <body>
+  <!-- animated cursor ------------------->
+ <div class="cursor">
+  
+ </div>
+ <script>
+  const cursor=document.querySelector(".cursor");
+  document.addEventListener("mousemove",(e)=>
+{
+  let x=e.pageX;
+  let y=e.pageY;
+  cursor.style.top = y+"px";
+  cursor.style.left = x+"px";
+});
+ </script>
+<!-- animated cursor end ---------------->
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
    <header>
       <div class="Logo"><img src="Images/L.svg" title="CampusXchange Logo"></div>

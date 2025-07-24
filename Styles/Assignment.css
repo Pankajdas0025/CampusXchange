@@ -1,0 +1,12 @@
+
+#Assignment a
+{
+    display:inline;
+}
+@media screen and (max-width:600px)
+{
+#Assignment a
+{
+    display: block;
+}
+}

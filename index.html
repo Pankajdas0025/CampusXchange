@@ -11,9 +11,9 @@
 <meta property="og:description" content="Innovative IT solutions, digital marketing services, and practical learning opportunities for students.">
 <!-- <meta property="og:image" content="banner.png">
 <meta property="og:url" content="#"> -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="Style.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
  <!--favicon ------------------------------------------------------------------------------>
 <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -24,7 +24,7 @@
 <body>
   <main>
   <header>
-  <div class="Logo"><img src="Images/L.svg" title="CampusXchange Logo"></div>
+  <div class="Logo"><img src="Images/L.png" alt="CampusXchange Logo"></div>
   </header>
    <!--Home page Header and navbar ----------------------------------------------------------------------------------------->
 <div class="topnav" id="myTopnav">
@@ -54,72 +54,31 @@
     <!--// mobile Togglebar ----------------------------------------------------------------------------------------->
  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
 </div>
-<br>
-<section class="marquee" aria-label="CampusXchange Highlights">
-  <div class="marquee__inner">
-    <p>🚀 New: Hands‑on Tech Assignments released weekly!</p>
-    <p>📚 Download free, 100% original Notes & Study Guides.</p>
-    <p>💡 Read our latest Blogs on Web Dev, SEO & Career Tips.</p>
-    <p>🎓 Join our Internship & Mentorship programs—start building real projects today!</p>
-  </div>
-</section>
 
-<br>
 <!-- animated cursor ------------------->
- <div class="cursor">
-  
- </div>
- <script>
-  const cursor=document.querySelector(".cursor");
-  document.addEventListener("mousemove",(e)=>
-{
-  let x=e.pageX;
-  let y=e.pageY;
-  cursor.style.top = y+"px";
-  cursor.style.left = x+"px";
-});
- </script>
+ <div class="cursor"></div>
 <!-- animated cursor end ---------------->
+<br>
 
-
-
-
-
-
-
-
-    <!-- hero section tittle of the project  ------------------------------------------------------------------------>
+<!-- hero section tittle of the project  ------------------------------------------------------------------------>
 <section class="hero">
-        <!-- First heading tag -->
-         <div class="HeroImg"><img src="Images/undraw_feeling-proud_tdos.svg" ></div>
+<!-- First heading tag -->
+         <div class="HeroImg">
+         <div class="Rotate1 HerosubImg1">Website Development👋</div>
+         <div class="Rotate2 HerosubImg2">SEO👋</div>
+         <div class="Rotate3 HerosubImg3">Internship👋</div>
+         <div class="Rotate4 HerosubImg4">Notes & Assignments👋</div>
+        
+          <img src="Images/CampusXchange-Hero-Image.png" id="Main" alt="CampusXchange-Hero-Image">
+        </div>
+         <br>
       <h1>Your Gateway to Learning , Development & Career Excellence with Internship programs.</h1>
-      <p>At CampusXchange, we bridge the gap between classroom knowledge and real-world skills. Whether you're a student looking for the right resources, a budding tech enthusiast in need of guidance, or a business seeking expert web solutions, we've got you covered. </p>
+      <p>At CampusXchange, we bridge the gap between classroom knowledge and real-world skills. Whether you're a student looking for the right resources, a budding tech enthusiast in need of guidance, or a business seeking expert web solutions and search engine optimization, we've got you covered. </p>
  
-    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+<!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
 </section>
-
-    <!-- Assignment section  ------------------------------------------------------------------------------------------------>
-   
-       <section class="block"  id="Assignment">
-      <h2>Get Programming Assignments with Just a Click!</h2>
-      <p></p>
-      <p>Are you finding it hard to complete your programming assignments on time? Whether you're stuck on a tricky code snippet or just need someone to guide you through a complex logic problem — CampusXchange is here to support you.
-
-Our team of experienced developers and mentors is ready to help you with all types of programming assignments — from beginner-level exercises to advanced projects across various languages and technologies.</P> 
-    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
-     <br>
-     <br>
-
-              <a href="Handouts/Assignment.html" title="Programming Assignment">Go</a>
-                          <!-- <a href="Handouts/Assignment.html" title="Programming Assignment">WebTechnology</a>
-                                    <a href="Handouts/Assignment.html" title="Programming Assignment">DSA using C++</a>
-                    <a href="Handouts/Assignment.html" title="Programming Assignment">DBMS</a>
-                            <a href="Handouts/Assignment.html" title="Programming Assignment">PHP</a> -->
-    </section>
-     <!-- Assignment section end  ------------------------------------------------------------------------------------------------>
-
-
-      <!-- Service-demo section  ------------------------------------------------------------------------------------------------>
+<br>
+<!-- Web Service-demo section  ------------------------------------------------------------------------------------------------>
       <section class="block"  id="Service-demo">
     
       <h2>Ready to Make Your Mark on the World?</h2>
@@ -143,7 +102,23 @@ Our team of experienced developers and mentors is ready to help you with all typ
 <br>
 </section>
 <!-- Service-demo section  end ------------------------------------------------------------------------------------------------>
-
+ <br>
+<!-- SEO service CTA section  ------------------------------------------------------------------------------------------------>
+      <section class="block seoSection">
+    
+      <h2>Rank Your Website in Search Engine Result Page</h2>
+      <p>Do you want to create your dream website or digital brand? Let's bring your vision to life! Whether you're a business, freelancer, student, or startup looking to stand out online, we're here to help you succeed.</p>
+      <br>
+      <div class="typeSeo" id="seo1">OnPage SEO</div>
+      <div class="typeSeo" id="seo2">OFFPage SEO</div>
+      <div class="typeSeo" id="seo3">Technical SEO</div>
+      <br>
+      <a href="Services/Webdevelopment.html" title="Webdevelopment"><button id="Explorbtn">Let's Discuss SEO</button></a>
+      <br>
+</section>
+<!-- SEO service cta  section  end here------------------------------------------------------------------------------------------------>
+<br>
+<!-- in which we show our work done section  ------------------------------------------------------------------------------------------------>
  <section class="block Home-page-about">
         <div class="container">
             <div class="about-content">
@@ -172,9 +147,33 @@ Our journey is built on passion, dedication, and a strong commitment to deliveri
             </div>
         </div>
     </section>
+<!-- in which we show our work done section end here  ------------------------------------------------------------------------------------------------>
     <br>
+<!-- Assignment section  ------------------------------------------------------------------------------------------------>
+   
+     <section class="block"  id="Assignment">
+      <h2>Get Programming Assignments with Just a Click!</h2>
+      <p></p>
+      <p>Are you finding it hard to complete your programming assignments on time? Whether you're stuck on a tricky code snippet or just need someone to guide you through a complex logic problem — CampusXchange is here to support you.
+
+Our team of experienced developers and mentors is ready to help you with all types of programming assignments — from beginner-level exercises to advanced projects across various languages and technologies.</P> 
+    <!-- <a href="Authetication.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-triangle-right"></span>Login</a> -->
+     <br>
+     <br>
+
+              <a href="Handouts/Assignment.html" title="Programming Assignment">Go</a>
+                          <!-- <a href="Handouts/Assignment.html" title="Programming Assignment">WebTechnology</a>
+                                    <a href="Handouts/Assignment.html" title="Programming Assignment">DSA using C++</a>
+                    <a href="Handouts/Assignment.html" title="Programming Assignment">DBMS</a>
+                            <a href="Handouts/Assignment.html" title="Programming Assignment">PHP</a> -->
+    </section>
+<!-- Assignment section end  here ------------------------------------------------------------------------------------------------>
+<br>
+<!-- in which we show our internship CTA section  ------------------------------------------------------------------------------------------------>    
        <section  class="block"  id="Internship">
-        <div class="IHero">  <h3>Begin Where Real Devs Do </h3>
+        <div class="IHero"> 
+          <img height="250" width="100%" src="Images/Banner.png">
+           <h3>Begin Where Real Devs Do </h3>
       <p>Tired of just collecting certificates with no real skills?
 At CampusXchange, we're not just about learning — we're about doing.
 <br>
@@ -193,8 +192,8 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
    <br>
     <hr>
 </div>
-<br>
-     <div  id="quicklinks"><h3>Quick links</h3>
+     <h3>Quick Links-</h3>
+     <div  id="quicklinks">
         <a href="#">Home</a>      
         <a href="#about-section">Notes</a>    
         <a href="#Courses-section">Blogs</a>    
@@ -206,6 +205,18 @@ Whether you're passionate about crafting pixel-perfect frontends or building pow
         <a href="#Contact-section">Let's Talk</a>
         
       </div>
+      <h3>Let's Connect!</h3>
+      <div  id="Sociallinks">
+        <a href="#Courses-section" title="Social Platform"><i class="fa-brands fa-linkedin"></i></a>    
+        <a href="#about-section" title="Social Platform"><i class="fa-brands fa-square-instagram"></i></a>    
+        <a href="#Results-section" title="Social Platform"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#Contact-section" title="Social Platform"><i class="fa-brands fa-youtube"></i></a>
+       
+      </div>
+         <div  id="CopyRight">
+       Copyright ©2025 CampusXchange. All Rights Reserved Designed By CampusXchange Team
+      </div>
+
  
         </section>  
         <!-- fotter section end  --------------------------------------------------------------------------------->  
