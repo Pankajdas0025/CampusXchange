@@ -90,6 +90,8 @@ document.addEventListener("mousemove",(e)=>
   cursor.style.top = y+"px";
   cursor.style.left = x+"px";
 });
+
+
 // Wait for the DOM to load before running script
 document.addEventListener("DOMContentLoaded", function() {
 

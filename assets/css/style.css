@@ -14,7 +14,7 @@ main{opacity:1;}
 
 /* home intro first section */
 
-.homeIntro {background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)),url('../Images/home-page-hero.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; font-family: 'Segoe UI', sans-serif; border-bottom: 5px solid #fff; min-height: 80vh; width: 100%; display: flex; margin-top: 15px;      background-attachment: fixed;}
+.homeIntro {background:linear-gradient(180deg, var(--secondary-color), var(--primary-color)),url('../Images/home-page-hero.jpg') center/cover no-repeat; color: white; padding: 60px 20px; text-align: center; font-family: 'Segoe UI', sans-serif; border-bottom: 5px solid #fff; min-height: 80vh; width: 100%; display: flex; margin-top: 15px; background-attachment: fixed;}
 
 .introContent {width:45%;text-align: left; padding-left:25px; margin:.5% 5%;}
 #core-ser{background-color: white;color: black;height: 80%;width:30%;margin: 5%;padding: 10px 50px;align-items: center;align-content: center;justify-self:center; border-radius:var(--radius);  box-shadow: var(--shadow);}
@@ -163,6 +163,8 @@ transform:translateX(-50%);
 #btn2{padding:8px 15px;background-color:transparent;color:#f44848;position:fixed;top:82%;left:82%;font-size:1.5rem;font-weight:bolder;display:none;border-radius:50%;border:var(--border)}
 #btn1:hover{background-color: var(--hoverbg);}
 #btn2:hover{ background-color: var(--hoverbg);}
+
+
 
 @media screen and (max-width:700px)
 {
