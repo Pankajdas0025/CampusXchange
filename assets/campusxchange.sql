@@ -11,7 +11,7 @@ CREATE TABLE admins (
 );
 
 INSERT INTO admins (id, username, password_hash) VALUES
-(1, 'admin/Pankaj' , 'jhbjsbaxajsbx');
+(1, 'admin@campusxchange.com' , '$2y$10$I6gvTBYvp6exqNE8XTd5peARSjYHl1t/Fd.i1YUnn7iSU10UylD3a');
 
 
 -- Table structure for applied_intern
